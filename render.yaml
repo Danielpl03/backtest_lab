@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: backtest-lab-frontend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: BACKEND_URL
+        sync: false

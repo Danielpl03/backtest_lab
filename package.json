@@ -1,0 +1,7 @@
+{
+  "name": "backtest-lab-frontend",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Frontend Node.js independiente para un backend REST Python de backtesting",
+  "scripts": { "start": "node server.js" }
+}
