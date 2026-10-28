@@ -77,3 +77,6 @@ La curva de capital representa una estimación a partir de los datos que devuelv
 El frontend es un proyecto independiente. Define `BACKEND_URL` con la URL del Web Service Python que ejecuta `api_server.py`, no con un endpoint de webhook de Telegram. Si el backend usa `BACKTEST_API_KEY`, configura también `BACKEND_API_KEY` con el mismo valor en el frontend. El frontend envía la clave en `X-API-Key` desde su servidor Node, no desde el navegador.
 
 Rutas consumidas: `GET /api/health` y `POST /api/backtest`. La API Python se entrega por separado en el ZIP del backend.
+
+
+La estrategia **Trend Trader-Remastered (TTR)** está disponible en el selector cuando se utiliza junto con el backend actualizado. Parámetros configurables: dirección, PSAR Start/Inc/Max, lookbacks fractales, proximidad de reentrada, permisos de reentrada sin TP y costos.
